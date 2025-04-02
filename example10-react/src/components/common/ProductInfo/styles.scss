@@ -1,0 +1,115 @@
+.product {
+    &-header {
+        display: flex;
+        flex-direction: normal;
+        align-items: center;
+        width: 100%;
+
+        .title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            flex-grow: 1;
+        }
+        .close {
+            button {
+                background-color: transparent;
+                border: none;
+                color: rgba(255, 255, 255, 0.5);
+                transition: all 0.15s ease;
+                border-radius: 4px;
+                padding: 0;
+                margin: 0;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: rgba(255, 255, 255, 0.75);
+                }
+            }
+        }
+    }
+    &-image figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin-bottom: 4rem;
+
+        .title {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .description {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 16px;
+            flex-grow: 1;
+        }
+
+        .prices {
+            display: flex;
+            justify-self: end;
+            .price {
+                font-size: 32px;
+                line-height: 32px;
+                font-weight: 700;
+                color: #fff;
+                position: relative;
+
+                sup {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 14px;
+                    font-weight: normal;
+                    position: absolute;
+                    top: 10px;
+                    left: calc(100% + 4px);
+                }
+            }
+
+            .discount {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700;
+                color: #fff;
+                margin-left: 8px;
+                position: relative;
+                sup {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 14px;
+                    font-weight: normal;
+                    position: absolute;
+                    top: 10px;
+                    left: calc(100% + 4px);
+                }
+            }
+        }
+    }
+
+    &-subs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+
+        .subItem {
+            width: calc(100% / 8 - 4px);
+        }
+    }
+
+    &-subtitle {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.75);
+        margin-top: 12px;
+        margin-left: 2px;
+        font-weight: normal;
+    }
+}

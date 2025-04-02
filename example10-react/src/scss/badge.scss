@@ -1,0 +1,31 @@
+
+
+
+.product-category {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+.bg-purple-gradient {
+    background: linear-gradient(90deg, #493FB9 0%, #A72DF1 100%);
+}
+
+.bg-cyan-gradient {
+    background: linear-gradient(90deg, #379981 0%, #4DDECD 100%);
+}
+.bg-orange-gradient {
+    background: linear-gradient(90deg, #CF4545 0%, #F1682D 100%);
+}
+.bg-default {
+    background-color: #141a24;
+}

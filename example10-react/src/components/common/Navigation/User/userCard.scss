@@ -1,0 +1,46 @@
+.userCard {
+
+    display: flex;
+
+    &-balance {
+        background: #141a24;
+        display: flex;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14px;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-amount {
+            letter-spacing: -1px;
+        }
+
+        &-currency {
+            margin-left: 12px;
+        }
+    }
+
+    &-avatar {
+        margin-left: 8px;
+        figure {
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 37px;
+                height: 37px;
+            }
+        }
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

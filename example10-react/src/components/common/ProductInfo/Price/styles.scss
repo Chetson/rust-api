@@ -1,0 +1,87 @@
+
+.productPrice {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &-prices {
+        font-family: 'Share Tech Mono', monospace;
+        letter-spacing: -4px;
+        font-size: 32px;
+        flex-grow: 1;
+    }
+
+    &-currency {
+        margin-right: 4px;
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+
+    &-total-price {
+        color: #fff;
+    }
+
+    &-discount-price {
+        text-decoration: line-through;
+        margin-left: 12px;
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+
+    &-amount {
+
+        margin: 0 12px;
+        width: 140px;
+
+        input.form-control {
+            background-color: #080d17;
+            border-color: #080d17;
+            outline: none;
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 16px;
+
+            &:active, &:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: #080d17;
+            }
+        }
+
+        button.btn.btn-primary {
+            background-color: #1d2532;
+            border-color: #1d2532;
+            padding: 4px 6px;
+
+            &:active, &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:hover, &:active {
+                background-color: #27303e;
+                border-color: #27303e;
+            }
+        }
+    }
+
+    &-purchase {
+        button.btn.btn-primary {
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: #214c91;
+            border-color: #214c91;
+
+            &:active, &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:hover, &:active {
+                background-color: #1e57b3;
+                border-color: #1e57b3;
+            }
+        }
+    }
+}

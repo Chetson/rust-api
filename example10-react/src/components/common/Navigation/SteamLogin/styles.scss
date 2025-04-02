@@ -1,0 +1,26 @@
+.steamLogin {
+
+    background: #141a24;
+    display: flex;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    border: 1px solid transparent;
+    text-decoration: none;
+
+    svg {
+        position: relative;
+        top: 3px;
+        margin-right: 4px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #1b2330;
+        border-color: #242f40;
+    }
+}
