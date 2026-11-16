@@ -1,0 +1,166 @@
+@import "bootstrap/scss/bootstrap";
+@import "./admin/product.scss";
+
+
+
+html, body {
+    background-color: #18191a;
+    color: rgb(255 255 255 / 50%);
+}
+
+html, body, #root {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: rgb(38 38 38);
+}
+
+.navbar {
+    background-color: rgb(23 23 23);
+}
+
+.nav {
+    &-link {
+        color: rgb(255 255 255 / 50%);
+
+        &:hover {
+            color: rgb(255 255 255 / 75%);
+        }
+    }
+}
+
+.card {
+    background-color: #1a1e22;
+}
+
+.aside-card {
+    margin-bottom: 24px;
+}
+
+.product {
+    &-card {
+        background-color: rgb(25, 30, 35);
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        margin-bottom: 24px;
+        position: relative;
+        padding: 12px;
+
+
+        figure {
+            margin-bottom: 0;
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(26, 32, 39);
+        }
+    }
+
+    &-price {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+    }
+
+    &-count {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        background-color: rgba(0,0,0,0.25);
+    }
+
+    &-discount {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+}
+
+.server {
+    &-progress {
+        background-color: rgba(0,0,0,0.25);
+
+        &.offline {
+            background-color: rgba(0,0,0,0.05);
+        }
+
+        .progress-bar {
+            background-color: rgb(255 135 0 / 70%);
+        }
+    }
+}
+
+
+.main-aside {
+    margin-top: 48px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+
+.server-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 8rem 0;
+
+    h1 {
+        color: rgb(255 255 255 / 80%);
+    }
+
+    p {
+        color: rgb(255 255 255 / 35%);
+    }
+}
+
+.server-card {
+    margin-bottom: 2rem;
+    padding: 24px 48px 48px 48px;
+    background-color: rgba(5, 10, 15, 0.15);
+    border-radius: 8px;
+    transition: background-color 0.15s ease-out;
+
+    &:hover {
+        background-color: rgba(5, 10, 15, 0.3);
+    }
+
+    h1 {
+        color: rgb(255 255 255 / 80%);
+        margin-bottom: 24px;
+    }
+    p {
+        color: rgb(255 255 255 / 35%);
+        margin-bottom: 24px;
+    }
+
+    &-options .badge {
+        display: inline-block;
+        margin-right: 8px;
+    }
+}
+
+table, table tr, table tr th, table tr td, table tr th {
+    color: white;
+}
+
+
+.modal {
+    &-body, &-header, &-footer, &-content {
+        background-color: rgb(31 42 42);
+    }
+
+    &-header {
+        border-bottom-color: rgb(44 54 54);
+    }
+
+    &-footer {
+        border-top-color: rgb(44 54 54);
+    }
+}

@@ -1,0 +1,22 @@
+.admin-products {
+    background-color: rgb(23 23 23);
+    color: rgb(115 115 115);
+
+    thead tr th {
+        text-align: center;
+        padding: 6px 12px;
+    }
+
+    thead tr,
+    tbody tr {
+        border-bottom-color: rgb(38 38 38);
+    }
+
+    figure {
+        margin: 0;
+    }
+    figure img {
+        margin: 0 12px 0 0;
+        padding: 0;
+    }
+}
